@@ -13,22 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Partner with SWEN90009 | Software Requirements Analysis",
+  title: "Software Engineering Industry Partnerships | SWEN90009 + SWEN90014",
   description:
-    "Bring a real organisational challenge to University of Melbourne software engineering students and uncover what should be built.",
+    "Partner at no project fee with University of Melbourne software engineering students on requirements analysis or a substantial software project.",
   openGraph: {
-    title: "Bring us a real problem | SWEN90009 Industry Partnership",
+    title: "Software Engineering Industry Partnerships",
     description:
-      "Partner with University of Melbourne software engineering students to uncover what should be built.",
+      "Propose a real-world project for SWEN90009 or SWEN90014. There is no project fee for participating organisations.",
     type: "website",
-    images: [{ url: "/og.png", width: 1730, height: 907 }],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bring us a real problem | SWEN90009",
+    card: "summary",
+    title: "Software Engineering Industry Partnerships",
     description:
-      "Industry partnership expressions of interest for Semester 1, 2027.",
-    images: ["/og.png"],
+      "Propose a real-world project for SWEN90009 or SWEN90014.",
   },
   icons: {
     icon: "/favicon.svg",

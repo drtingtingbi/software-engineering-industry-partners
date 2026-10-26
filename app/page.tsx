@@ -1,198 +1,210 @@
 const emailLink =
-  "mailto:tingting.bi@unimelb.edu.au?subject=SWEN90009%20Industry%20Partnership%20%E2%80%94%20Semester%201%2C%202027&body=Name%3A%0AOrganisation%3A%0AThe%20problem%20we%20would%20like%20to%20explore%3A%0AWho%20is%20affected%3A%0A";
+  "mailto:tingting.bi@unimelb.edu.au?subject=Software%20Engineering%20Industry%20Partnership%20%E2%80%94%202027&body=Name%3A%0AOrganisation%3A%0AProject%20or%20problem%20you%20would%20like%20students%20to%20explore%3A%0APreferred%20subject%20(if%20known)%3A%0A";
 
-const examples = [
-  {
-    number: "01",
-    title: "Decisions under pressure",
-    text: "Triage requests, allocate scarce resources or prioritise work—without hiding the trade-offs.",
-    tags: ["Operations", "Decision support"],
-  },
-  {
-    number: "02",
-    title: "Knowledge that is hard to reach",
-    text: "Help people find and trust answers spread across documents, teams and legacy systems.",
-    tags: ["Knowledge", "Responsible AI"],
-  },
-  {
-    number: "03",
-    title: "Services that exclude people",
-    text: "Redesign a process around accessibility, conflicting needs and the people most affected by it.",
-    tags: ["Service design", "Accessibility"],
-  },
+const projectAreas = [
+  "Business processes and internal tools",
+  "Data, reporting and decision support",
+  "Customer and community services",
+  "Research software and digital platforms",
+  "System integration and modernisation",
+  "Responsible AI-enabled software",
 ];
 
 export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="SWEN90009 home">
-          <span className="wordmark-mark">SRA</span>
-          <span>SWEN90009</span>
+        <a className="wordmark" href="#top" aria-label="Software Engineering Industry Partnerships home">
+          <span className="wordmark-mark">MSE</span>
+          <span>Industry Partnerships</span>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#partnership">The partnership</a>
-          <a href="#fit">Project fit</a>
-          <a href="#process">The process</a>
-          <a className="nav-cta" href={emailLink}>
-            Start a conversation
-          </a>
+          <a href="#subjects">Subjects</a>
+          <a href="#projects">Project fit</a>
+          <a href="#process">How it works</a>
+          <a className="nav-cta" href={emailLink}>Submit an enquiry</a>
         </nav>
       </header>
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">Industry partnership · Semester 1, 2027</p>
+          <p className="eyebrow">University of Melbourne · Master of Software Engineering</p>
           <h1>
-            Bring us a real problem.<br />
-            <em>We&apos;ll uncover what to build.</em>
+            Share a real-world challenge<br />
+            <em>with our students.</em>
           </h1>
           <p className="hero-intro">
-            Partner with Master of Software Engineering students at the
-            University of Melbourne to investigate a complex operational,
-            human or AI-enabled challenge—before costly assumptions become
-            software.
+            We invite organisations to partner with graduate software
+            engineering teams—from early requirements analysis to the design
+            and delivery of a substantial software solution.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href={emailLink}>
-              Propose a challenge <span aria-hidden="true">↗</span>
+              Submit a project enquiry <span aria-hidden="true">↗</span>
             </a>
-            <a className="text-link" href="#partnership">
-              See how it works <span aria-hidden="true">↓</span>
-            </a>
+            <a className="text-link" href="#subjects">Compare the subjects <span aria-hidden="true">↓</span></a>
           </div>
         </div>
 
-        <aside className="hero-card" aria-label="Partnership summary">
-          <div className="signal"><span></span> Expressions of interest open</div>
-          <p className="card-kicker">SWEN90009</p>
-          <h2>Software Requirements Analysis</h2>
-          <dl>
-            <div><dt>Format</dt><dd>One semester</dd></div>
-            <div><dt>Partner time</dt><dd>~6–8 hours total</dd></div>
-            <div><dt>Best for</dt><dd>Open, complex problems</dd></div>
-            <div><dt>Outcome</dt><dd>Evidence-led requirements</dd></div>
-          </dl>
+        <aside className="course-summary" aria-label="Available partnership subjects">
+          <div className="signal"><span></span> Expressions of interest open for 2027</div>
+          <article className="course-mini-card">
+            <p className="card-kicker">SWEN90009 · Semester 1</p>
+            <h2>Software Requirements Analysis</h2>
+            <p>Investigate the problem, engage stakeholders and develop validated software requirements.</p>
+          </article>
+          <article className="course-mini-card">
+            <p className="card-kicker">SWEN90014 · Semester 2</p>
+            <h2>Masters Software Engineering Project</h2>
+            <p>Design, build and evaluate a substantial software solution across a full project lifecycle.</p>
+          </article>
         </aside>
       </section>
 
-      <section className="statement" id="partnership">
-        <p>Not a free development service.</p>
-        <h2>A structured investigation into the problem behind the product.</h2>
+      <section className="statement">
+        <p>No project fee</p>
+        <h2>There is no charge for organisations to partner with our student teams.</h2>
+        <p className="statement-note">Partners contribute their time, organisational context and feedback throughout the semester.</p>
       </section>
 
-      <section className="split-section">
-        <div className="section-label">What you gain</div>
-        <div className="large-copy">
+      <section className="subjects-section" id="subjects">
+        <div className="section-intro">
+          <p className="section-label">Choose the right pathway</p>
+          <h2>Where is your project today?</h2>
+          <p>You do not need to select a subject before contacting us. We will help identify the best fit and scope.</p>
+        </div>
+
+        <div className="subject-cards">
+          <article className="subject-card requirements-card">
+            <div className="subject-topline">
+              <span>Semester 1</span>
+              <span>SWEN90009</span>
+            </div>
+            <p className="subject-phase">Discover &amp; define</p>
+            <h3>Software Requirements Analysis</h3>
+            <p className="subject-description">
+              Best for an important problem that is not yet well understood,
+              where stakeholders, priorities or possible solutions need to be
+              investigated.
+            </p>
+            <h4>Student teams may deliver</h4>
+            <ul>
+              <li>Stakeholder and problem analysis</li>
+              <li>Business process and domain models</li>
+              <li>Prioritised functional and quality requirements</li>
+              <li>Prototypes and validation evidence</li>
+              <li>A requirements package for future delivery</li>
+            </ul>
+            <p className="subject-note">Focus: deciding what should be built and why.</p>
+          </article>
+
+          <article className="subject-card delivery-card">
+            <div className="subject-topline">
+              <span>Semester 2</span>
+              <span>SWEN90014</span>
+            </div>
+            <p className="subject-phase">Design &amp; deliver</p>
+            <h3>Masters Software Engineering Project</h3>
+            <p className="subject-description">
+              Best for a well-framed project with a committed partner, a
+              feasible semester scope and clear access to the knowledge or data
+              needed by the team.
+            </p>
+            <h4>Student teams may deliver</h4>
+            <ul>
+              <li>Refined project scope and requirements</li>
+              <li>Software architecture and technical design</li>
+              <li>A substantial working prototype or solution</li>
+              <li>Testing and quality evaluation</li>
+              <li>Technical documentation and handover</li>
+            </ul>
+            <p className="subject-note">Focus: delivering and evaluating a software solution.</p>
+          </article>
+        </div>
+        <p className="continuity-note">
+          A project may be suitable for one or both subjects. Participation in
+          both can create continuity from discovery to delivery, subject to
+          scope, student allocation and teaching-team approval.
+        </p>
+      </section>
+
+      <section className="partner-value">
+        <div>
+          <p className="section-label">Why participate</p>
+          <h2>A fresh perspective on work that matters.</h2>
+        </div>
+        <div className="value-list">
+          <div><span>01</span><h3>Structured attention</h3><p>A team devotes a semester to understanding or progressing a challenge that day-to-day work may leave unresolved.</p></div>
+          <div><span>02</span><h3>Independent thinking</h3><p>Students bring current software engineering methods and question assumptions constructively.</p></div>
+          <div><span>03</span><h3>Useful artefacts</h3><p>Receive documented analysis, models, prototypes or software outcomes suited to the selected subject.</p></div>
+        </div>
+      </section>
+
+      <section className="projects-section" id="projects">
+        <div className="section-intro compact">
+          <p className="section-label">Suitable projects</p>
+          <h2>Grounded in a genuine organisational need.</h2>
           <p>
-            A student team will challenge assumptions, speak with stakeholders
-            and make the invisible work visible.
+            Strong projects have an engaged contact person, access to domain
+            knowledge and enough uncertainty for students to make meaningful
+            engineering decisions.
           </p>
-          <div className="outcomes">
-            <div><span>01</span><p>A clear account of the real problem and who it affects</p></div>
-            <div><span>02</span><p>Prioritised functional, quality and responsible-AI requirements</p></div>
-            <div><span>03</span><p>Models, prototypes and evidence from stakeholder validation</p></div>
-            <div><span>04</span><p>A decision-ready brief for your next product or procurement step</p></div>
+        </div>
+
+        <div className="project-grid">
+          {projectAreas.map((area, index) => (
+            <div className="project-area" key={area}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <p>{area}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="fit-guidance">
+          <div>
+            <h3>A good project provides</h3>
+            <ul>
+              <li>A real user, operational or research need</li>
+              <li>A partner who can meet the team regularly</li>
+              <li>Access to relevant stakeholders and domain knowledge</li>
+              <li>A scope that can produce a meaningful semester outcome</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Projects are less suitable when</h3>
+            <ul>
+              <li>The solution and every feature are already fixed</li>
+              <li>No one is available to answer questions or review work</li>
+              <li>Success depends on restricted data students cannot access</li>
+              <li>A production-ready commercial system is required on a fixed deadline</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section className="fit-section" id="fit">
-        <div className="section-heading">
-          <p className="eyebrow">A good challenge has room to discover</p>
-          <h2>Come with a knot,<br /><em>not a shopping list.</em></h2>
-        </div>
-
-        <div className="fit-grid">
-          <article className="fit-card good-fit">
-            <p className="fit-kicker"><span>✓</span> A strong fit</p>
-            <h3>You have a problem that resists an obvious answer.</h3>
-            <ul>
-              <li>Several stakeholders want different things</li>
-              <li>Work relies on judgement, workarounds or scattered information</li>
-              <li>Failure has meaningful human or organisational consequences</li>
-              <li>You can provide access to people, workflows or de-identified examples</li>
-            </ul>
-          </article>
-          <article className="fit-card weak-fit">
-            <p className="fit-kicker"><span>×</span> Probably not a fit</p>
-            <h3>You already know every screen and feature you want.</h3>
-            <ul>
-              <li>A fixed website or app build with no open questions</li>
-              <li>Work that requires production code by semester end</li>
-              <li>A project with no access to real users or evidence</li>
-              <li>A request to add a chatbot without a defined user problem</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section className="examples-section">
-        <div className="section-heading compact">
-          <p className="eyebrow">The shape of a good problem</p>
-          <h2>Questions worth<br />investigating.</h2>
-        </div>
-        <div className="examples-grid">
-          {examples.map((example) => (
-            <article className="example-card" key={example.number}>
-              <span className="example-number">{example.number}</span>
-              <h3>{example.title}</h3>
-              <p>{example.text}</p>
-              <div className="tags">
-                {example.tags.map((tag) => <span key={tag}>{tag}</span>)}
-              </div>
-            </article>
-          ))}
-        </div>
-        <p className="example-note">
-          Your challenge does not need to be an “AI project”. Students will
-          examine whether AI, conventional software or process change is the
-          responsible response—and explain why.
-        </p>
-      </section>
-
       <section className="process-section" id="process">
-        <div className="section-heading light">
-          <p className="eyebrow">One semester · four partner moments</p>
-          <h2>Generous insight.<br /><em>Manageable commitment.</em></h2>
+        <div className="section-intro light">
+          <p className="section-label">The partnership</p>
+          <h2>A clear process, supported by the teaching team.</h2>
         </div>
         <ol className="timeline">
-          <li>
-            <span className="step">01</span>
-            <div><p className="when">Before semester</p><h3>Shape the challenge</h3><p>A short conversation with the teaching team to frame an open, suitable problem.</p></div>
-          </li>
-          <li>
-            <span className="step">02</span>
-            <div><p className="when">Weeks 2–4</p><h3>Open the context</h3><p>Brief the team and connect them with relevant stakeholders, examples and workflows.</p></div>
-          </li>
-          <li>
-            <span className="step">03</span>
-            <div><p className="when">Weeks 5–9</p><h3>Test their understanding</h3><p>Join two focused check-ins to challenge assumptions and respond to emerging findings.</p></div>
-          </li>
-          <li>
-            <span className="step">04</span>
-            <div><p className="when">End of semester</p><h3>Review the evidence</h3><p>Attend the final requirements review and receive the team&apos;s analysis and recommendations.</p></div>
-          </li>
+          <li><span className="step">01</span><div><p className="when">Enquiry</p><h3>Tell us about the project</h3><p>Share the organisational context, the need and what a useful outcome might look like.</p></div></li>
+          <li><span className="step">02</span><div><p className="when">Scoping</p><h3>Agree on subject and scope</h3><p>We assess suitability, expectations, access constraints and the appropriate student pathway.</p></div></li>
+          <li><span className="step">03</span><div><p className="when">Semester</p><h3>Work with the student team</h3><p>Join a kickoff and regular focused meetings to provide context, answer questions and review progress.</p></div></li>
+          <li><span className="step">04</span><div><p className="when">Completion</p><h3>Review and handover</h3><p>Attend the final presentation and receive the agreed project artefacts and recommendations.</p></div></li>
         </ol>
       </section>
 
-      <section className="principles-section">
+      <section className="expectations-section">
         <div>
-          <p className="eyebrow">What students are learning</p>
-          <h2>Requirements are decisions—not documents.</h2>
+          <p className="section-label">What we ask of partners</p>
+          <h2>Context, access and timely feedback.</h2>
         </div>
-        <div className="principles-copy">
-          <p>
-            Students learn to elicit, model, negotiate and validate requirements
-            for contemporary socio-technical systems. They must trace every
-            recommendation to evidence and confront uncertainty, accessibility,
-            privacy, safety and responsible AI.
-          </p>
-          <p>
-            Partners receive thoughtful analysis and fresh perspectives. The
-            educational focus is discovery and specification; implementation
-            or production deployment is outside the scope of this subject.
-          </p>
+        <div className="expectation-grid">
+          <div><strong>One</strong><p>named contact who can represent the organisation</p></div>
+          <div><strong>Regular</strong><p>meetings at agreed points through the semester</p></div>
+          <div><strong>Appropriate</strong><p>access to stakeholders, systems or de-identified examples</p></div>
+          <div><strong>Constructive</strong><p>feedback on student understanding and project outcomes</p></div>
         </div>
       </section>
 
@@ -200,41 +212,49 @@ export default function Home() {
         <div className="section-label">Common questions</div>
         <div className="faq-list">
           <details>
-            <summary>Do we need an AI project?<span>+</span></summary>
-            <p>No. Bring an important problem. Students will evaluate AI alongside conventional software and non-technical alternatives.</p>
+            <summary>Is there a fee to participate?<span>+</span></summary>
+            <p>No. There is no project fee for participating organisations. Partners contribute time, access to relevant people or information, and regular feedback to the student team.</p>
           </details>
           <details>
-            <summary>Can students sign an NDA?<span>+</span></summary>
-            <p>Projects should preferably use non-confidential or de-identified information. Any confidentiality needs must be discussed before the project is accepted.</p>
+            <summary>Which subject should I propose my project to?<span>+</span></summary>
+            <p>You can submit one enquiry without choosing. SWEN90009 suits open problems requiring investigation; SWEN90014 suits well-framed projects ready for design and implementation.</p>
           </details>
           <details>
-            <summary>Will we receive working software?<span>+</span></summary>
-            <p>No production system is promised. Teams may create low-fidelity prototypes to test requirements, but the primary outcome is a validated requirements package.</p>
+            <summary>Does the project need to involve AI?<span>+</span></summary>
+            <p>No. We welcome a broad range of software and socio-technical problems. AI may be considered where it serves a genuine need, but it is not a requirement.</p>
+          </details>
+          <details>
+            <summary>Will we receive production-ready software?<span>+</span></summary>
+            <p>SWEN90009 focuses on analysis rather than implementation. SWEN90014 may produce a substantial working solution, but it remains an educational project and should not be treated as guaranteed production delivery.</p>
+          </details>
+          <details>
+            <summary>Can projects involve confidential information?<span>+</span></summary>
+            <p>Non-confidential or de-identified information is strongly preferred. Any confidentiality, privacy, intellectual-property or system-access needs must be discussed during scoping.</p>
           </details>
           <details>
             <summary>Who can become a partner?<span>+</span></summary>
-            <p>Companies, government teams, research groups, not-for-profits and community organisations are all welcome to propose a challenge.</p>
+            <p>Companies, government teams, research groups, not-for-profits and community organisations are welcome to enquire.</p>
           </details>
         </div>
       </section>
 
       <section className="final-cta">
-        <p className="eyebrow">Expressions of interest · Semester 1, 2027</p>
-        <h2>What problem keeps<br />your team working around it?</h2>
+        <p className="eyebrow">Industry project expressions of interest · 2027</p>
+        <h2>Start with a short conversation.</h2>
         <p className="cta-copy">
-          Send a few sentences about the challenge, who it affects and why it
-          matters. We will help determine whether it suits the subject.
+          Send a brief description of your organisation, the project or problem
+          and the people it affects. We will help you assess its suitability.
         </p>
         <a className="button button-light" href={emailLink}>
-          Tell us about the problem <span aria-hidden="true">↗</span>
+          Submit a project enquiry <span aria-hidden="true">↗</span>
         </a>
         <a className="email" href="mailto:tingting.bi@unimelb.edu.au">tingting.bi@unimelb.edu.au</a>
       </section>
 
       <footer>
-        <div className="footer-mark"><span className="wordmark-mark">SRA</span><strong>SWEN90009</strong></div>
-        <p>Software Requirements Analysis · School of Computing and Information Systems</p>
-        <p>University of Melbourne · Semester 1, 2027</p>
+        <div className="footer-mark"><span className="wordmark-mark">MSE</span><strong>Industry Partnerships</strong></div>
+        <p>School of Computing and Information Systems</p>
+        <p>University of Melbourne · 2027</p>
       </footer>
     </main>
   );

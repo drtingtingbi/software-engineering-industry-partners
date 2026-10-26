@@ -1,11 +1,11 @@
-# SWEN90009 Industry Partnership
+# Software Engineering Industry Partnerships
 
 Public call for industry partners for **Software Requirements Analysis
-(SWEN90009)** at the University of Melbourne.
+(SWEN90009)** and the **Masters Software Engineering Project (SWEN90014)** at
+the University of Melbourne.
 
-The site invites organisations to bring open, consequential problems for
-Master of Software Engineering students to investigate during Semester 1,
-2027.
+The site invites organisations to propose real-world software problems for
+Master of Software Engineering students to investigate or develop during 2027.
 
 ## Local development
 
