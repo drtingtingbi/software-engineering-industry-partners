@@ -3,7 +3,7 @@ import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 
 const origin = "http://localhost:3000";
 const publicUrl = "https://drtingtingbi.github.io/swen90009-industry-partners";
-const output = new URL("../_site/", import.meta.url);
+const output = new URL("../docs/", import.meta.url);
 
 const server = spawn("npm", ["run", "dev"], {
   cwd: new URL("../", import.meta.url),

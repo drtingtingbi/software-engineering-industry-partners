@@ -22,4 +22,6 @@ npm test
 npm run export:pages
 ```
 
-Every push to `main` publishes the static export to GitHub Pages.
+The generated site is committed in `docs/` and served by GitHub Pages. After
+editing the site, run `npm run export:pages`, then commit and push the updated
+`docs/` files.
