@@ -168,6 +168,35 @@ footer { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 30px; align-i
 footer p { margin: 0; }
 footer p:last-child { text-align: right; }
 
+.showcase-hero { display: grid; grid-template-columns: 1.25fr .75fr; gap: 9vw; align-items: end; padding: 110px 5vw 88px; background: var(--stone); }
+.showcase-hero .eyebrow { margin-bottom: 28px; color: var(--burgundy); }
+.showcase-intro > p { max-width: 620px; margin: 0; color: var(--muted); font-size: 19px; line-height: 1.62; }
+.showcase-intro dl { display: grid; grid-template-columns: 1fr 1fr; margin: 42px 0 0; border-top: 1px solid var(--ink); }
+.showcase-intro dl > div { padding: 19px 20px 0 0; }
+.showcase-intro dl > div + div { padding-left: 20px; border-left: 1px solid var(--ink); }
+.showcase-intro dt { color: var(--burgundy); font: 400 36px/1 Georgia, serif; }
+.showcase-intro dd { margin: 8px 0 0; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+.privacy-note { display: grid; grid-template-columns: .45fr 1.55fr; gap: 5vw; padding: 26px 5vw; background: var(--ink); color: white; }
+.privacy-note strong { color: #d6b9c2; font-size: 12px; text-transform: uppercase; letter-spacing: .1em; }
+.privacy-note p { max-width: 920px; margin: 0; color: rgba(255,255,255,.72); line-height: 1.58; }
+.project-year { padding: 105px 5vw 115px; background: var(--white); }
+.project-year + .project-year { padding-top: 0; }
+.year-heading { display: grid; grid-template-columns: .5fr 1fr .7fr; gap: 5vw; align-items: end; padding-bottom: 28px; border-bottom: 2px solid var(--ink); }
+.year-heading p { margin: 0; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .1em; }
+.year-heading h2 { margin: 0; font: 400 clamp(70px, 9vw, 132px)/.75 Georgia, serif; letter-spacing: -.055em; }
+.year-heading p:last-child { text-align: right; }
+.case-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-left: 1px solid var(--ink); }
+.case-card { display: flex; flex-direction: column; min-height: 390px; padding: 30px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); background: var(--paper); }
+.case-number { color: var(--burgundy); font: 700 11px/1 monospace; letter-spacing: .08em; }
+.case-card h3 { margin: 66px 0 18px; font-size: clamp(23px, 2.1vw, 32px); line-height: 1.08; letter-spacing: -.025em; }
+.case-card > p { margin: 0; color: var(--muted); line-height: 1.58; }
+.case-card ul { display: flex; flex-wrap: wrap; gap: 7px; margin: auto 0 0; padding: 35px 0 0; list-style: none; }
+.case-card li { padding: 6px 9px; border: 1px solid #c9c1b5; color: #52606c; font-size: 11px; line-height: 1.2; }
+.continuity-callout { display: grid; grid-template-columns: .45fr 1.55fr; gap: 5vw; padding: 95px 5vw; background: var(--sage); }
+.continuity-callout > div { max-width: 950px; }
+.continuity-callout h2 { margin: -7px 0 25px; font: 400 clamp(38px, 4.8vw, 68px)/1.06 Georgia, serif; letter-spacing: -.035em; }
+.continuity-callout div > p { max-width: 760px; margin: 0 0 28px; color: var(--muted); font-size: 17px; line-height: 1.65; }
+
 .button, .nav-cta { transition: transform .18s ease, background .18s ease; }
 .button:hover, .nav-cta:hover { transform: translateY(-2px); }
 .nav-cta:hover { background: var(--ink); color: white; }
@@ -184,6 +213,8 @@ footer p:last-child { text-align: right; }
   .timeline li > div { grid-template-columns: 1fr; gap: 12px; }
   footer { grid-template-columns: 1fr; }
   footer p:last-child { text-align: left; }
+  .showcase-hero { grid-template-columns: 1fr; }
+  .case-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 560px) {
@@ -209,6 +240,16 @@ footer p:last-child { text-align: right; }
   .final-cta { padding: 86px 20px; }
   .email { display: block; margin: 24px 0 0; }
   footer { padding: 30px 20px; }
+  .showcase-hero { padding: 72px 20px 60px; }
+  .privacy-note, .continuity-callout { grid-template-columns: 1fr; padding: 32px 20px; }
+  .project-year { padding: 78px 20px; }
+  .project-year + .project-year { padding-top: 0; }
+  .year-heading { grid-template-columns: 1fr 1fr; }
+  .year-heading h2 { grid-row: 2; }
+  .year-heading p:last-child { grid-column: 2; grid-row: 2; text-align: right; }
+  .case-grid { grid-template-columns: 1fr; }
+  .case-card { min-height: 340px; }
+  .continuity-callout { padding-top: 68px; padding-bottom: 68px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

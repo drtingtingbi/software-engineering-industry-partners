@@ -21,7 +21,7 @@ export default function Home() {
         <nav aria-label="Primary navigation">
           <a href="#subjects">Subjects</a>
           <a href="#projects">Project fit</a>
-          <a href="#process">How it works</a>
+          <a href="./projects/">Previous projects</a>
           <a className="nav-cta" href={emailLink}>Submit an enquiry</a>
         </nav>
       </header>
