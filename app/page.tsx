@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element -- The official versioned logo is already an optimized vector asset. */
+
 const emailLink =
   "mailto:tingting.bi@unimelb.edu.au?subject=Software%20Engineering%20Industry%20Partnership%20%E2%80%94%202027&body=Name%3A%0AOrganisation%3A%0AProject%20or%20problem%20you%20would%20like%20students%20to%20explore%3A%0APreferred%20subject%20(if%20known)%3A%0A";
 
@@ -15,8 +17,12 @@ export default function Home() {
     <main className="home-page">
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Software Engineering Industry Partnerships home">
-          <span className="wordmark-mark">MSE</span>
-          <span>Industry Partnerships</span>
+          <img
+            className="unimelb-logo"
+            src="https://designsystem.web.unimelb.edu.au/v15.14.0/assets/logo-9f61db642f53f8d36d9c.svg"
+            alt="The University of Melbourne"
+          />
+          <span>Software Engineering<br />Industry Partnerships</span>
         </a>
         <nav aria-label="Primary navigation">
           <a href="#subjects">Subjects</a>

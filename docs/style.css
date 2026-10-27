@@ -39,6 +39,9 @@ a { color: inherit; }
 .home-page .delivery-card { background: #e3f6fd; }
 .home-page .final-cta { background: #000f46; }
 .home-page footer { background: #000b34; }
+.home-page .site-header { padding-top: 12px; padding-bottom: 12px; }
+.home-page .wordmark { gap: 16px; line-height: 1.35; }
+.unimelb-logo { display: block; width: 80px; height: 80px; flex: 0 0 auto; }
 
 .site-header {
   display: flex;
@@ -241,6 +244,7 @@ footer p:last-child { text-align: right; }
 @media (max-width: 560px) {
   .site-header { padding: 15px 20px; }
   .wordmark > span:last-child { display: none; }
+  .unimelb-logo { width: 58px; height: 58px; }
   .nav-cta { font-size: 12px; }
   .hero { min-height: auto; padding: 58px 20px 78px; }
   .hero-actions { align-items: flex-start; flex-direction: column; }
