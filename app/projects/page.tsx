@@ -6,17 +6,17 @@ const emailLink =
 export const metadata: Metadata = {
   title: "Previous Projects | Software Engineering Industry Partnerships",
   description:
-    "Explore selected SWEN90014 student projects developed with industry and community partners in 2025 and 2026.",
+    "Explore SWEN90014 student projects developed with industry and community partners in 2025 and 2026.",
   openGraph: {
     title: "Previous Projects | Software Engineering Industry Partnerships",
     description:
-      "Selected SWEN90014 projects developed by University of Melbourne software engineering students with real partners.",
+      "SWEN90014 projects developed by University of Melbourne software engineering students with real partners.",
     type: "website",
   },
   twitter: {
     card: "summary",
     title: "Previous Projects | Software Engineering Industry Partnerships",
-    description: "Selected SWEN90014 student projects from 2025 and 2026.",
+    description: "SWEN90014 student projects from 2025 and 2026.",
   },
 };
 
@@ -59,6 +59,18 @@ const projects: Record<string, Project[]> = {
       themes: ["Business operations", "Scheduling", "Reporting"],
     },
     {
+      title: "Warehouse Management System",
+      summary:
+        "A warehouse operations platform supporting product, inventory and day-to-day management workflows.",
+      themes: ["Warehouse operations", "Inventory", "Workflow management"],
+    },
+    {
+      title: "Graduate Job Seeker Platform",
+      summary:
+        "An AI-powered platform providing graduate job seekers with structured tools and support for their employment journey.",
+      themes: ["Graduate employment", "AI assistance", "Career services"],
+    },
+    {
       title: "VisualEd",
       summary:
         "A curated image library for education, with provenance, usage-rights information, citations and an expert review workflow.",
@@ -91,10 +103,34 @@ const projects: Record<string, Project[]> = {
       themes: ["Data engineering", "Digital twins", "System integration"],
     },
     {
-      title: "AI Compliance Audit Management",
+      title: "For Humanity AI Compliance",
       summary:
         "A workspace for organising AI-system audits, reusable compliance templates, evidence, tasks, reporting and team oversight.",
       themes: ["Responsible AI", "Compliance", "Workflow management"],
+    },
+    {
+      title: "ArtCert",
+      summary:
+        "A digital gallery and artwork-authentication platform designed to record provenance and protect artists and collectors.",
+      themes: ["Art technology", "Provenance", "Digital identity"],
+    },
+    {
+      title: "ConstructAI Skills Analyser",
+      summary:
+        "A dashboard that analyses construction-sector job postings to identify demand for AI and machine-learning skills.",
+      themes: ["Workforce analytics", "Construction", "Data insights"],
+    },
+    {
+      title: "Digital Bricks for Science Gallery",
+      summary:
+        "A content-management platform for artists to develop digital exhibitions and for gallery staff to manage publishing and display operations.",
+      themes: ["Arts & culture", "Content management", "Digital exhibitions"],
+    },
+    {
+      title: "VisualEd",
+      summary:
+        "An academic image-generation and library platform supporting the creation, review and reuse of educational visual material.",
+      themes: ["Education", "Image generation", "Content library"],
     },
     {
       title: "SkillRealms",
@@ -128,13 +164,13 @@ export default function ProjectsPage() {
         </div>
         <div className="showcase-intro">
           <p>
-            These examples show the range of substantial software engineering
-            challenges undertaken by student teams with industry, community
-            and university partners.
+            A complete view of the distinct project streams represented in the
+            2025 and 2026 organizations, spanning industry, community and
+            university partnerships.
           </p>
           <dl>
             <div><dt>2</dt><dd>project cohorts</dd></div>
-            <div><dt>12</dt><dd>selected examples</dd></div>
+            <div><dt>18</dt><dd>project streams</dd></div>
           </dl>
         </div>
       </section>
@@ -142,9 +178,9 @@ export default function ProjectsPage() {
       <aside className="privacy-note">
         <strong>About these examples</strong>
         <p>
-          Project descriptions are concise, project-level summaries. Student
-          details, private repositories, partner documents and internal
-          technical information are not published here.
+          Multiple team and requirements repositories are consolidated into
+          one entry per project. Student details, private repositories, partner
+          documents and internal technical information are not published here.
         </p>
       </aside>
 

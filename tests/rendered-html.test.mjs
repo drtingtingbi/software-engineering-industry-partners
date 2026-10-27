@@ -40,6 +40,12 @@ test("server-renders the previous project showcase without private details", asy
   assert.match(html, /Yoir/);
   assert.match(html, /Ready to Learn Scale/);
   assert.match(html, /Digital Twin Data Ingestion/);
+  assert.match(html, /Warehouse Management System/);
+  assert.match(html, /Graduate Job Seeker Platform/);
+  assert.match(html, /ArtCert/);
+  assert.match(html, /ConstructAI Skills Analyser/);
+  assert.match(html, /Digital Bricks for Science Gallery/);
+  assert.match(html, /18/);
   assert.match(html, /Partnership is free of charge/);
   assert.match(html, /private repositories/);
   assert.doesNotMatch(html, /github\.com\/(?:SWEN90014-2025-SM2|swen90014-2026-sm2)/i);
