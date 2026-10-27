@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Software Engineering Industry Partnerships | SWEN90009 + SWEN90014",
+  title: "Call for Industry Partners | SWEN90009 + SWEN90014",
   description:
     "Partner at no project fee with University of Melbourne software engineering students on requirements analysis or a substantial software project.",
   openGraph: {

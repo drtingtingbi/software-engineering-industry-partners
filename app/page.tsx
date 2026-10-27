@@ -30,8 +30,8 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">University of Melbourne · Master of Software Engineering</p>
           <h1>
-            Share a real-world challenge<br />
-            <em>with our students.</em>
+            Call for<br />
+            <em>industry partners.</em>
           </h1>
           <p className="hero-intro">
             We invite organisations to partner with graduate software

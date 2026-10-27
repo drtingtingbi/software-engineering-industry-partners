@@ -19,7 +19,8 @@ test("server-renders the industry partnership call", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /Share a real-world challenge/);
+  assert.match(html, /Call for/);
+  assert.match(html, /industry partners/);
   assert.match(html, /SWEN90009/);
   assert.match(html, /SWEN90014/);
   assert.match(html, /There is no charge/);
