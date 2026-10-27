@@ -12,7 +12,7 @@ const projectAreas = [
 
 export default function Home() {
   return (
-    <main>
+    <main className="home-page">
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Software Engineering Industry Partnerships home">
           <span className="wordmark-mark">MSE</span>

@@ -22,6 +22,24 @@ body {
 }
 a { color: inherit; }
 
+.home-page {
+  --ink: #000b34;
+  --muted: #48527a;
+  --paper: #f4f4f4;
+  --white: #ffffff;
+  --burgundy: #000f46;
+  --burgundy-dark: #000b34;
+  --stone: #f3f3f6;
+  --sage: #e3f6fd;
+  --line: rgba(0, 15, 70, 0.2);
+}
+.home-page .button-primary { background: #47c8f0; color: #000b34; }
+.home-page .signal span { background: #47c8f0; }
+.home-page .requirements-card { background: #f3f3f6; }
+.home-page .delivery-card { background: #e3f6fd; }
+.home-page .final-cta { background: #000f46; }
+.home-page footer { background: #000b34; }
+
 .site-header {
   display: flex;
   align-items: center;
